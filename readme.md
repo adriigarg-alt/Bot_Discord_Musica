@@ -34,29 +34,28 @@ Miniatura del video
 Cambio de color si la canción es favorita
 
 🚀 Instalación
-Requisitos
+🔧 Requisitos
 Python 3.10+
 FFmpeg instalado
 MySQL o MariaDB
 
-1. Clonar repositorio
-   git clone https://github.com/tu-usuario/music-bot.git
-   cd music-bot
+📥 Clonar repositorio
+git clone https://github.com/tu-usuario/music-bot.git
+cd music-bot
 
-2. Instalar dependencias
-   pip install -r requirements.txt
+📦 Instalar dependencias
+pip install -r requirements.txt
 
-3. Configurar variables de entorno
+⚙️ Configurar variables de entorno
 
 Copia el archivo de ejemplo y rellena tus credenciales:
 
 cp .env.example .env
 
 Windows:
+
 copy .env.example .env
-
-# .env
-
+🗂️ Archivo .env
 DISCORD_TOKEN=tu_token
 CHANNEL_ID=id_canal_inicio
 
@@ -81,12 +80,12 @@ Comando	Descripción
 
 📁 Playlists
 Comando	Descripción
-!crear_playlist <nombre>	Crear playlist
-!add_playlist <nombre> <canción>	Añadir canción
-!ver_playlist <nombre>	Ver playlist
+!crear_playlist	Crear playlist
+!add_playlist <canción>	Añadir canción
+!ver_playlist	Ver playlist
 !mis_playlists	Ver todas
-!borrar_playlist <nombre>	Eliminar
-!play_playlist <nombre>	Reproducir
+!borrar_playlist	Eliminar
+!play_playlist	Reproducir
 
 📊 Estadísticas
 Comando	Descripción
@@ -120,7 +119,7 @@ playlist_songs → relación playlist-canción
 ✔ Foreign Keys con borrado en cascada
 
 ⚙️ Arquitectura
-Flujo de reproducción
+🔄 Flujo de reproducción
 Usuario ejecuta !play
 Se busca en YouTube con yt-dlp
 Se obtiene stream de audio
@@ -130,16 +129,16 @@ Se muestra embed con botón ❤️
 Se actualiza progreso en tiempo real
 
 🔥 Características destacadas
-
 ❤️ Botón interactivo
 Añade/Quita favoritos sin comandos
 Persistente en base de datos
 Cambia color del reproductor
 
 📊 Progreso en tiempo real
+
 Barra animada tipo:
-▬▬▬🔘▬▬▬▬▬▬▬▬
-1:20 / 3:45
+
+▬▬▬🔘▬▬▬▬▬▬▬▬ 1:20 / 3:45
 
 🧠 Sistema inteligente
 Historial automático
@@ -154,6 +153,7 @@ Push
 Pull Request
 
 📝 Licencia
+
 MIT
 
 📌 Notas
@@ -162,6 +162,11 @@ Compatible con múltiples servidores
 Base de datos optimizada para evitar duplicados
 
 ⚠️ Seguridad
+
+Nunca compartas tu archivo .env.
+El token de Discord da acceso total a tu bot.
+
+Si alguna vez lo subiste por error, revoca el token inmediatamente en el Developer Portal.
 
 Nunca compartas tu archivo `.env`.
 El token de Discord da acceso total a tu bot.
