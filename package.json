@@ -1,0 +1,10 @@
+{
+  "name": "discord-music-bot",
+  "version": "1.0.0",
+  "description": "Bot de música para Discord hecho en Python con sistema de playlists y favoritos",
+  "scripts": {
+    "start": "echo \"Este proyecto usa Python (ejecuta: python bot.py)\""
+  },
+  "keywords": ["discord", "music", "bot", "python"],
+  "license": "MIT"
+}
