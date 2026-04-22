@@ -175,4 +175,4 @@ Si alguna vez lo subiste por error, revoca el token inmediatamente en el Develop
 
 🎉 Autor
 
-Desarrollado con ❤️ para la comunidad de Discord 🚀
+🚀 Desarrollado con ❤️ para la comunidad de Discord 🚀
